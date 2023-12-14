@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#filme-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+#filme-background img {
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#filme-background img:first-child {
+    opacity: 1;
+    z-index: 1;
+}
+
+
+
+#cabecario {
+    position: relative;
+    z-index: 2;
+}
+
+#loginForm {
+    position: relative;
+    z-index: 3;
+}
+
+
